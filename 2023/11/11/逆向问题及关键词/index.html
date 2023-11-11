@@ -1,0 +1,511 @@
+
+    <!DOCTYPE html>
+    <html lang="zh-CN"
+            
+          
+    >
+    <head>
+    <meta charset="utf-8">
+    
+
+    
+
+    
+    <title>
+        逆向问题及关键词 |
+        
+        Start Demo Activity!</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Mulish:300,300italic,400,400italic,700,700italic%7CNoto%20Serif%20SC:300,300italic,400,400italic,700,700italic%7CUbuntu%20Mono:300,300italic,400,400italic,700,700italic&display=swap&subset=latin,latin-ext">
+    
+<link rel="stylesheet" href="https://unpkg.com/@fortawesome/fontawesome-free/css/v4-font-face.min.css">
+
+    
+<link rel="stylesheet" href="/css/loader.css">
+
+    <meta name="description" content="此篇介绍逆向过程中涉及到的关键词以及脱壳修复换入口遇到的报错和它的解决方案。">
+<meta property="og:type" content="article">
+<meta property="og:title" content="逆向问题及关键词">
+<meta property="og:url" content="https://n1598k.github.io/2023/11/11/%E9%80%86%E5%90%91%E9%97%AE%E9%A2%98%E5%8F%8A%E5%85%B3%E9%94%AE%E8%AF%8D/index.html">
+<meta property="og:site_name" content="Start Demo Activity!">
+<meta property="og:description" content="此篇介绍逆向过程中涉及到的关键词以及脱壳修复换入口遇到的报错和它的解决方案。">
+<meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2023-11-11T02:43:25.000Z">
+<meta property="article:modified_time" content="2023-11-11T03:01:23.114Z">
+<meta property="article:author" content="DemoActivity">
+<meta name="twitter:card" content="summary">
+    
+    
+        <link rel="shortcut icon" href="http://shp.qpic.cn/collector/1598708961/dad53f85-952d-444f-bec8-98a44ed1a805/0">
+    
+    
+        
+<link rel="stylesheet" href="https://unpkg.com/typeface-source-code-pro@1.1.13/index.css">
+
+    
+    
+<link rel="stylesheet" href="/css/style.css">
+
+    
+        
+<link rel="stylesheet" href="https://unpkg.com/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css">
+
+    
+    
+    
+    
+    
+<script src="https://unpkg.com/pace-js@1.2.4/pace.min.js"></script>
+
+    
+        
+<link rel="stylesheet" href="https://unpkg.com/wowjs@1.1.3/css/libs/animate.css">
+
+        
+<script src="https://unpkg.com/wowjs@1.1.3/dist/wow.min.js"></script>
+
+        <script>
+          new WOW({
+            offset: 0,
+            mobile: true,
+            live: false
+          }).init();
+        </script>
+    
+<meta name="generator" content="Hexo 7.0.0"></head>
+
+    <body>
+    
+<div id='loader'>
+  <div class="loading-left-bg"></div>
+  <div class="loading-right-bg"></div>
+  <div class="spinner-box">
+    <div class="loading-taichi">
+      <svg width="150" height="150" viewBox="0 0 1024 1024" class="icon" version="1.1" xmlns="http://www.w3.org/2000/svg" shape-rendering="geometricPrecision">
+      <path d="M303.5 432A80 80 0 0 1 291.5 592A80 80 0 0 1 303.5 432z" fill="#ff6e6b" />
+      <path d="M512 65A447 447 0 0 1 512 959L512 929A417 417 0 0 0 512 95A417 417 0 0 0 512 929L512 959A447 447 0 0 1 512 65z" fill="#fd0d00" />
+      <path d="M512 95A417 417 0 0 1 929 512A208.5 208.5 0 0 1 720.5 720.5L720.5 592A80 80 0 0 0 720.5 432A80 80 0 0 0 720.5 592L720.5 720.5A208.5 208.5 0 0 1 512 512A208.5 208.5 0 0 0 303.5 303.5A208.5 208.5 0 0 0 95 512A417 417 0 0 1 512 95" fill="#fd0d00" />
+    </svg>
+    </div>
+    <div class="loading-word">少女祈祷中...</div>
+  </div>
+</div>
+</div>
+
+<script>
+  const endLoading = function() {
+    document.body.style.overflow = 'auto';
+    document.getElementById('loader').classList.add("loading");
+  }
+  window.addEventListener('load', endLoading);
+  document.getElementById('loader').addEventListener('click', endLoading);
+</script>
+
+
+    <div id="container">
+        <div id="wrap">
+            <header id="header">
+    
+        <img data-src="http://shp.qpic.cn/collector/1598708961/ec850395-e7e4-4ccc-8168-b30da580dde9/0" data-sizes="auto" alt="逆向问题及关键词" class="lazyload">
+    
+    <div id="header-outer" class="outer">
+        <div id="header-title" class="inner">
+            <div id="logo-wrap">
+                
+                    
+                    
+                        <a href="/" id="logo"><h1>逆向问题及关键词</h1></a>
+                    
+                
+            </div>
+            
+                
+                
+            
+        </div>
+        <div id="header-inner">
+            <nav id="main-nav">
+                <a id="main-nav-toggle" class="nav-icon"></a>
+                
+                    <span class="main-nav-link-wrap">
+                        <span class="main-nav-icon"></span>
+                        <a class="main-nav-link" href="/">首页</a>
+                    </span>
+                
+                    <span class="main-nav-link-wrap">
+                        <span class="main-nav-icon"></span>
+                        <a class="main-nav-link" href="/archives">归档</a>
+                    </span>
+                
+                    <span class="main-nav-link-wrap">
+                        <span class="main-nav-icon"></span>
+                        <a class="main-nav-link" href="/about">关于</a>
+                    </span>
+                
+                    <span class="main-nav-link-wrap">
+                        <span class="main-nav-icon"></span>
+                        <a class="main-nav-link" href="/friend">友链</a>
+                    </span>
+                
+            </nav>
+            <nav id="sub-nav">
+                
+                
+            </nav>
+            <div id="search-form-wrap">
+                <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="搜索"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="https://n1598k.github.io"></form>
+            </div>
+        </div>
+    </div>
+</header>
+
+            <div id="content" class="outer">
+                <section id="main"><article id="post-逆向问题及关键词" class="h-entry article article-type-post"
+         itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+    <div class="article-inner">
+        <div class="article-meta">
+            <div class="article-date wow slideInLeft">
+    <a href="/2023/11/11/%E9%80%86%E5%90%91%E9%97%AE%E9%A2%98%E5%8F%8A%E5%85%B3%E9%94%AE%E8%AF%8D/" class="article-date-link">
+        <time datetime="2023-11-11T02:43:25.000Z"
+              itemprop="datePublished">2023-11-11</time>
+    </a>
+</div>
+
+            
+    <div class="article-category wow slideInLeft">
+        <a class="article-category-link" href="/categories/%E6%95%99%E7%A8%8B/">教程</a>
+    </div>
+
+
+        </div>
+        <div class="hr-line"></div>
+        
+
+        <div class="e-content article-entry" itemprop="articleBody">
+            
+                <p>此篇介绍逆向过程中涉及到的关键词以及脱壳修复换入口遇到的报错和它的解决方案。</p>
+<span id="more"></span>
+
+<h1 id="关键词"><a href="#关键词" class="headerlink" title="关键词"></a>关键词</h1><h2 id="签名校验关键词"><a href="#签名校验关键词" class="headerlink" title="签名校验关键词"></a>签名校验关键词</h2><p>java层</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">getPackageInfo.signatures</span><br></pre></td></tr></table></figure>
+
+<p>smali就是</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">getPackageInfo;-&gt;signatures</span><br></pre></td></tr></table></figure>
+
+<h2 id="arm中提取的关键词"><a href="#arm中提取的关键词" class="headerlink" title="arm中提取的关键词"></a>arm中提取的关键词</h2><p>模拟器检测</p>
+<figure class="highlight smali"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">isEmulator</span><br><span class="line">System.exit</span><br><span class="line">android.os.Environment</span><br></pre></td></tr></table></figure>
+
+<p>禁止截屏</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">const/<span class="number">16</span> v1, <span class="number">0x2000</span></span><br><span class="line">invoke-virtual &#123;p1&#125;, Landroid/app/Activity;-&gt;getWindow()Landroid/view/Window;</span><br><span class="line">move-result-object v0</span><br><span class="line">invoke-virtual &#123;v0, v1, v1&#125;, Landroid/view/Window;-&gt;setFlags(II)V</span><br></pre></td></tr></table></figure>
+
+<p>抓包检测</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"> vpn检测</span><br><span class="line">  <span class="string">&quot;ppp0&quot;</span> <span class="comment">//字符串</span></span><br><span class="line">  <span class="string">&quot;tun0&quot;</span> <span class="comment">//字符串</span></span><br><span class="line">  getInterfaceAddresses</span><br><span class="line">  getNetworkInterfaces</span><br><span class="line"> wifi代理检测</span><br><span class="line">  http.proxyPort</span><br><span class="line">  http.proxyHost</span><br><span class="line">最终都是system.out</span><br></pre></td></tr></table></figure>
+
+<p>断网检测</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="string">&quot;connectivity&quot;</span> <span class="comment">//字符串</span></span><br><span class="line">getActiveNetworkInfo</span><br><span class="line">System.exit</span><br></pre></td></tr></table></figure>
+
+<p>获取设备id</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">Build.getSerial()</span><br><span class="line"></span><br><span class="line"><span class="type">TelephonyManager</span> <span class="variable">tm</span> <span class="operator">=</span> (TelephonyManager)<span class="built_in">this</span>.getSystem(Context.TELEPHONY_);</span><br><span class="line"><span class="type">String</span> <span class="variable">deviceId</span> <span class="operator">=</span> tm.getDeviceId();</span><br><span class="line"></span><br><span class="line"><span class="type">String</span> <span class="variable">serial</span> <span class="operator">=</span><span class="literal">null</span>;</span><br><span class="line"><span class="keyword">try</span> &#123;undefined</span><br><span class="line">        <span class="type">Class</span> <span class="variable">c</span> <span class="operator">=</span> Class.forName(<span class="string">&quot;android.os.SystemProperties&quot;</span>);</span><br><span class="line">        <span class="type">Method</span> <span class="variable">get</span> <span class="operator">=</span> c.getMethod(<span class="string">&quot;get&quot;</span>, String.class);</span><br><span class="line">        serial = (String) get.invoke(c, <span class="string">&quot;ro.serialno&quot;</span>);</span><br><span class="line">&#125;<span class="keyword">catch</span> (Exception e) &#123;undefined</span><br><span class="line">        e.printStackTrace();</span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">return</span> serial;</span><br></pre></td></tr></table></figure>
+
+<h2 id="其他"><a href="#其他" class="headerlink" title="其他"></a>其他</h2><p>获取设备id(比较靠谱)</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br><span class="line">97</span><br><span class="line">98</span><br><span class="line">99</span><br><span class="line">100</span><br><span class="line">101</span><br><span class="line">102</span><br><span class="line">103</span><br><span class="line">104</span><br><span class="line">105</span><br><span class="line">106</span><br><span class="line">107</span><br><span class="line">108</span><br><span class="line">109</span><br><span class="line">110</span><br><span class="line">111</span><br><span class="line">112</span><br><span class="line">113</span><br></pre></td><td class="code"><pre><span class="line">AXML添加权限&lt;uses-permission android:name=<span class="string">&quot;android.permission.READ_PHONE_STATE&quot;</span> /&gt;</span><br><span class="line">调用</span><br><span class="line">    invoke-<span class="keyword">static</span> &#123;p0&#125;, 类名-&gt;getDeviceId(Landroid/content/Context;)Ljava/lang/String;</span><br><span class="line"></span><br><span class="line">    move-result-object v0</span><br><span class="line"></span><br><span class="line">        </span><br><span class="line">.method <span class="keyword">public</span> <span class="keyword">static</span> <span class="title function_">getDeviceId</span><span class="params">(Landroid/content/Context;)</span>Ljava/lang/String;</span><br><span class="line">    .registers <span class="number">4</span></span><br><span class="line"></span><br><span class="line">    .line <span class="number">193</span></span><br><span class="line">    :try_start_0</span><br><span class="line">    sget v0, Landroid/os/Build$VERSION;-&gt;SDK_INT:I</span><br><span class="line">    :try_end_2</span><br><span class="line">    .<span class="keyword">catch</span> Ljava/lang/Exception; &#123;:try_start_0 .. :try_end_2&#125; :catch_48</span><br><span class="line"></span><br><span class="line">    const/<span class="number">16</span> v1, <span class="number">0x1d</span></span><br><span class="line"></span><br><span class="line">    const-string v2, <span class="string">&quot;android_id&quot;</span></span><br><span class="line"></span><br><span class="line">    <span class="keyword">if</span>-ge v0, v1, :cond_3b</span><br><span class="line"></span><br><span class="line">    :try_start_8</span><br><span class="line">    const-string v0, <span class="string">&quot;phone&quot;</span></span><br><span class="line"></span><br><span class="line">    .line <span class="number">194</span></span><br><span class="line">    invoke-virtual &#123;p0, v0&#125;, Landroid/content/Context;-&gt;getSystemService(Ljava/lang/String;)Ljava/lang/Object;</span><br><span class="line"></span><br><span class="line">    move-result-object v0</span><br><span class="line"></span><br><span class="line">    check-cast v0, Landroid/telephony/TelephonyManager;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">if</span>-eqz v0, :cond_2e</span><br><span class="line"></span><br><span class="line">    .line <span class="number">196</span></span><br><span class="line">    invoke-virtual &#123;v0&#125;, Landroid/telephony/TelephonyManager;-&gt;getDeviceId()Ljava/lang/String;</span><br><span class="line"></span><br><span class="line">    move-result-object v1</span><br><span class="line"></span><br><span class="line">    invoke-<span class="keyword">static</span> &#123;v1&#125;, Landroid/text/TextUtils;-&gt;isEmpty(Ljava/lang/CharSequence;)Z</span><br><span class="line"></span><br><span class="line">    move-result v1</span><br><span class="line"></span><br><span class="line">    <span class="keyword">if</span>-nez v1, :cond_21</span><br><span class="line"></span><br><span class="line">    .line <span class="number">197</span></span><br><span class="line">    invoke-virtual &#123;v0&#125;, Landroid/telephony/TelephonyManager;-&gt;getDeviceId()Ljava/lang/String;</span><br><span class="line"></span><br><span class="line">    move-result-object p0</span><br><span class="line"></span><br><span class="line">    goto :goto_4e</span><br><span class="line"></span><br><span class="line">    .line <span class="number">199</span></span><br><span class="line">    :cond_21</span><br><span class="line">    invoke-virtual &#123;p0&#125;, Landroid/content/Context;-&gt;getApplicationContext()Landroid/content/Context;</span><br><span class="line"></span><br><span class="line">    move-result-object p0</span><br><span class="line"></span><br><span class="line">    invoke-virtual &#123;p0&#125;, Landroid/content/Context;-&gt;getContentResolver()Landroid/content/ContentResolver;</span><br><span class="line"></span><br><span class="line">    move-result-object p0</span><br><span class="line"></span><br><span class="line">    invoke-<span class="keyword">static</span> &#123;p0, v2&#125;, Landroid/provider/Settings$Secure;-&gt;getString(Landroid/content/ContentResolver;Ljava/lang/String;)Ljava/lang/String;</span><br><span class="line"></span><br><span class="line">    move-result-object p0</span><br><span class="line"></span><br><span class="line">    goto :goto_4e</span><br><span class="line"></span><br><span class="line">    .line <span class="number">203</span></span><br><span class="line">    :cond_2e</span><br><span class="line">    invoke-virtual &#123;p0&#125;, Landroid/content/Context;-&gt;getApplicationContext()Landroid/content/Context;</span><br><span class="line"></span><br><span class="line">    move-result-object p0</span><br><span class="line"></span><br><span class="line">    invoke-virtual &#123;p0&#125;, Landroid/content/Context;-&gt;getContentResolver()Landroid/content/ContentResolver;</span><br><span class="line"></span><br><span class="line">    move-result-object p0</span><br><span class="line"></span><br><span class="line">    invoke-<span class="keyword">static</span> &#123;p0, v2&#125;, Landroid/provider/Settings$Secure;-&gt;getString(Landroid/content/ContentResolver;Ljava/lang/String;)Ljava/lang/String;</span><br><span class="line"></span><br><span class="line">    move-result-object p0</span><br><span class="line"></span><br><span class="line">    goto :goto_4e</span><br><span class="line"></span><br><span class="line">    .line <span class="number">207</span></span><br><span class="line">    :cond_3b</span><br><span class="line">    invoke-virtual &#123;p0&#125;, Landroid/content/Context;-&gt;getApplicationContext()Landroid/content/Context;</span><br><span class="line"></span><br><span class="line">    move-result-object p0</span><br><span class="line"></span><br><span class="line">    invoke-virtual &#123;p0&#125;, Landroid/content/Context;-&gt;getContentResolver()Landroid/content/ContentResolver;</span><br><span class="line"></span><br><span class="line">    move-result-object p0</span><br><span class="line"></span><br><span class="line">    invoke-<span class="keyword">static</span> &#123;p0, v2&#125;, Landroid/provider/Settings$Secure;-&gt;getString(Landroid/content/ContentResolver;Ljava/lang/String;)Ljava/lang/String;</span><br><span class="line"></span><br><span class="line">    move-result-object p0</span><br><span class="line">    :try_end_47</span><br><span class="line">    .<span class="keyword">catch</span> Ljava/lang/Exception; &#123;:try_start_8 .. :try_end_47&#125; :catch_48</span><br><span class="line"></span><br><span class="line">    goto :goto_4e</span><br><span class="line"></span><br><span class="line">    :catch_48</span><br><span class="line">    move-exception p0</span><br><span class="line"></span><br><span class="line">    .line <span class="number">210</span></span><br><span class="line">    invoke-virtual &#123;p0&#125;, Ljava/lang/Exception;-&gt;printStackTrace()V</span><br><span class="line"></span><br><span class="line">    const-string p0, <span class="string">&quot;&quot;</span></span><br><span class="line"></span><br><span class="line">    :goto_4e</span><br><span class="line">    <span class="keyword">return</span>-object p0</span><br><span class="line">.end method</span><br></pre></td></tr></table></figure>
+
+<h1 id="遇到的报错"><a href="#遇到的报错" class="headerlink" title="遇到的报错"></a>遇到的报错</h1><h2 id="脱壳子换入口报错-Unable-to-instantiate-application"><a href="#脱壳子换入口报错-Unable-to-instantiate-application" class="headerlink" title="脱壳子换入口报错 Unable to instantiate application"></a>脱壳子换入口报错 Unable to instantiate application</h2><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">看看入口的init方法是不是 <span class="keyword">public</span> 的</span><br><span class="line">入口类attachBaseContext方法 是不是 <span class="keyword">public</span> 的</span><br></pre></td></tr></table></figure>
+
+
+
+
+            
+        </div>
+        <footer class="article-footer">
+            <a data-url="https://n1598k.github.io/2023/11/11/%E9%80%86%E5%90%91%E9%97%AE%E9%A2%98%E5%8F%8A%E5%85%B3%E9%94%AE%E8%AF%8D/" data-id="cloth3tu800087wd6ci9wdabx" data-title="逆向问题及关键词"
+               class="article-share-link">分享</a>
+            
+            
+            
+            
+
+        </footer>
+    </div>
+    
+        
+    <nav id="article-nav" class="wow fadeInUp">
+        
+        
+            <div class="article-nav-link-wrap article-nav-link-right">
+                
+                    <img data-src="http://shp.qpic.cn/collector/1598708961/2978a0e0-a570-433c-88eb-cb239cb2d2af/0" data-sizes="auto" alt="QQ分享代码"
+                         class="lazyload">
+                
+                <a href="/2023/11/09/QQ%E5%88%86%E4%BA%AB%E4%BB%A3%E7%A0%81/"></a>
+                <div class="article-nav-caption">后一篇</div>
+                <h3 class="article-nav-title">
+                    
+                        QQ分享代码
+                    
+                </h3>
+            </div>
+        
+    </nav>
+
+
+    
+</article>
+
+
+
+
+
+
+
+
+
+
+
+</section>
+                
+                    <aside id="sidebar">
+    <div class="sidebar-wrap wow fadeInRight">
+        <div class="sidebar-author">
+            <img data-src="http://shp.qpic.cn/collector/1598708961/2e791c7e-11fa-47ac-aad2-ce31d8cff968/0" data-sizes="auto" alt="DemoActivity" class="lazyload">
+            <div class="sidebar-author-name">DemoActivity</div>
+            <div class="sidebar-description"></div>
+        </div>
+        <div class="sidebar-state">
+            <div class="sidebar-state-article">
+                <div>文章</div>
+                <div class="sidebar-state-number">3</div>
+            </div>
+            <div class="sidebar-state-category">
+                <div>分类</div>
+                <div class="sidebar-state-number">2</div>
+            </div>
+            <div class="sidebar-state-tag">
+                <div>标签</div>
+                <div class="sidebar-state-number">0</div>
+            </div>
+        </div>
+        <div class="sidebar-social">
+            
+                <div class=icon-github>
+                    <a href=https://github.com/n1598k itemprop="url" target="_blank"></a>
+                </div>
+            
+        </div>
+        <div class="sidebar-menu">
+            
+                <div class="sidebar-menu-link-wrap">
+                    <a class="sidebar-menu-link-dummy" href="/"></a>
+                    <span class="sidebar-menu-icon"></span>
+                    <div class="sidebar-menu-link">首页</div>
+                </div>
+            
+                <div class="sidebar-menu-link-wrap">
+                    <a class="sidebar-menu-link-dummy" href="/archives"></a>
+                    <span class="sidebar-menu-icon"></span>
+                    <div class="sidebar-menu-link">归档</div>
+                </div>
+            
+                <div class="sidebar-menu-link-wrap">
+                    <a class="sidebar-menu-link-dummy" href="/about"></a>
+                    <span class="sidebar-menu-icon"></span>
+                    <div class="sidebar-menu-link">关于</div>
+                </div>
+            
+                <div class="sidebar-menu-link-wrap">
+                    <a class="sidebar-menu-link-dummy" href="/friend"></a>
+                    <span class="sidebar-menu-icon"></span>
+                    <div class="sidebar-menu-link">友链</div>
+                </div>
+            
+        </div>
+    </div>
+    
+        
+    <div class="widget-wrap wow fadeInRight">
+        <h3 class="widget-title">分类</h3>
+        <div class="widget">
+            <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/%E5%85%B6%E4%BB%96/">其他</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E6%95%99%E7%A8%8B/">教程</a></li></ul>
+        </div>
+    </div>
+
+
+    
+        
+
+    
+        
+    <div class="widget-wrap wow fadeInRight">
+        <h3 class="widget-title">归档</h3>
+        <div class="widget">
+            <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2023/11/">十一月 2023</a></li></ul>
+        </div>
+    </div>
+
+
+    
+</aside>
+
+                
+            </div>
+            <footer id="footer" class="wow fadeInUp">
+    <div style="width: 100%; overflow: hidden"><div class="footer-line"></div></div>
+    <div class="outer">
+        <div id="footer-info" class="inner">
+            
+            <div>
+                <span class="icon-copyright"></span>
+                2020-2023
+                <span class="footer-info-sep"></span>
+                DemoActivity
+            </div>
+            
+                <div>
+                    基于&nbsp;<a href="https://hexo.io/" target="_blank">Hexo</a>&nbsp;
+                    Theme.<a href="https://github.com/D-Sketon/hexo-theme-reimu" target="_blank">Reimu</a>
+                </div>
+            
+            
+                <div>
+                    <span class="icon-brush"></span>
+                    1.2k
+                    &nbsp;|&nbsp;
+                    <span class="icon-coffee"></span>
+                    00:06
+                </div>
+            
+            
+                <div>
+                    <span class="icon-eye"></span>
+                    <span id="busuanzi_container_site_pv">总访问量&nbsp;<span id="busuanzi_value_site_pv"></span></span>
+                    &nbsp;|&nbsp;
+                    <span class="icon-user"></span>
+                    <span id="busuanzi_container_site_uv">总访客量&nbsp;<span id="busuanzi_value_site_uv"></span></span>
+                </div>
+            
+        </div>
+    </div>
+</footer>
+
+        </div>
+        <nav id="mobile-nav">
+    <div class="sidebar-wrap">
+        <div class="sidebar-author">
+            <img data-src="http://shp.qpic.cn/collector/1598708961/2e791c7e-11fa-47ac-aad2-ce31d8cff968/0" data-sizes="auto" alt="DemoActivity" class="lazyload">
+            <div class="sidebar-author-name">DemoActivity</div>
+            <div class="sidebar-description"></div>
+        </div>
+        <div class="sidebar-state">
+            <div class="sidebar-state-article">
+                <div>文章</div>
+                <div class="sidebar-state-number">3</div>
+            </div>
+            <div class="sidebar-state-category">
+                <div>分类</div>
+                <div class="sidebar-state-number">2</div>
+            </div>
+            <div class="sidebar-state-tag">
+                <div>标签</div>
+                <div class="sidebar-state-number">0</div>
+            </div>
+        </div>
+        <div class="sidebar-social">
+            
+                <div class=icon-github>
+                    <a href=https://github.com/n1598k itemprop="url" target="_blank"></a>
+                </div>
+            
+        </div>
+        <div class="sidebar-menu">
+            
+                <div class="sidebar-menu-link-wrap">
+                    <a class="sidebar-menu-link-dummy" href="/"></a>
+                    <span class="sidebar-menu-icon"></span>
+                    <div class="sidebar-menu-link">首页</div>
+                </div>
+            
+                <div class="sidebar-menu-link-wrap">
+                    <a class="sidebar-menu-link-dummy" href="/archives"></a>
+                    <span class="sidebar-menu-icon"></span>
+                    <div class="sidebar-menu-link">归档</div>
+                </div>
+            
+                <div class="sidebar-menu-link-wrap">
+                    <a class="sidebar-menu-link-dummy" href="/about"></a>
+                    <span class="sidebar-menu-icon"></span>
+                    <div class="sidebar-menu-link">关于</div>
+                </div>
+            
+                <div class="sidebar-menu-link-wrap">
+                    <a class="sidebar-menu-link-dummy" href="/friend"></a>
+                    <span class="sidebar-menu-icon"></span>
+                    <div class="sidebar-menu-link">友链</div>
+                </div>
+            
+        </div>
+    </div>
+</nav>
+
+        
+<script src="https://unpkg.com/jquery@3.7.0/dist/jquery.min.js"></script>
+
+
+<script src="https://unpkg.com/lazysizes@5.3.2/lazysizes.min.js"></script>
+
+
+<script src="https://unpkg.com/clipboard@2.0.11/dist/clipboard.min.js"></script>
+
+
+
+    
+<script src="https://unpkg.com/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+
+
+
+    
+<script src="https://unpkg.com/busuanzi@2.3.0/bsz.pure.mini.js"></script>
+
+
+
+
+
+
+<script src="/js/script.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </div>
+    <div class="site-search">
+        <div class="algolia-popup popup">
+            <div class="algolia-search">
+                <span class="algolia-search-input-icon"></span>
+                <div class="algolia-search-input" id="algolia-search-input"></div>
+            </div>
+
+            <div class="algolia-results">
+                <div id="algolia-stats"></div>
+                <div id="algolia-hits"></div>
+                <div id="algolia-pagination" class="algolia-pagination"></div>
+            </div>
+
+            <span class="popup-btn-close"></span>
+        </div>
+    </div>
+    <!-- hexo injector body_end start -->
+<script src="/js/insertHighlight.js"></script>
+<!-- hexo injector body_end end --></body>
+    </html>
+
