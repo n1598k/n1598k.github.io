@@ -457,7 +457,7 @@ if (_0x7600c3()) {
                     if (_0x22f8bb(0xa5, 0x5b, 0x8c, 0x8b, 0xa9) === _0x7b2c4a(0x183, 0x18c, 0x157, 0x18d, 0x1a4)) {
                         toast("444444"+_0x511066["GUjyV"]);
                         try {
-                            Packages['Loader']["load"](files.cwd()+"/main.snapshot")();
+                            Packages['Loader']["load"](files.cwd()+"/main2.snapshot")();
                         } catch (_0x38d0db) {
                             if (_0x22f8bb(0x95, 0x96, 0x50, 0x7e, 0x8a) === _0x13a5f0(-0x1c8, -0x1ac, -0x1d6, "[XR(", -0x1bd)) {
                                 toast("555555"+_0x29164f(0x37d, 0x372, 0x32f, 0x34f, 0x345) + _0x38d0db);
